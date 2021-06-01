@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>Photomatic - Contáctanos</title>
+    <meta name="description" content="Nuestros precios se ajustan a la calidad sobresaliente de los servicios que ofrecemos.">
+    <meta name="keywords" content="servicio foográfico, fotografía">
+    <link rel="title icon" type="image/png" href="images/favicon.png">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;400;600;800&family=Open+Sans:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.2.0/css/all.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!--WOW JS-->
+    <link rel="stylesheet" href="css/animate.css">
+</head>
+<body>
+    <!--Header-->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+            <a href="index.html" class="navbar-brand mb-0">
+                <img class="navbar-logo d-inline-block" src="images/logo.svg" alt="Logo de Photomatic"> 
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="index.html">INICIO</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="servicios.html">SERVICIOS</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="galeria.html">GALERIA</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="nosotros.html">NOSOTROS</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" href="contacto.html">CONTACTO</a>
+                </li>
+              </ul>
+            </div>
+        </nav>
+    </header>
+    <!--Main-->
+    <main>
+
+        <!--Paquetes Fotográficos-->
+        <section class="py-lg-4 py-sm-1 px-4 wow fadeInDown">
+            <div class="row justify-content-center wow fadeInLeft">
+                <div class="col-lg-8 mx-auto text-center">
+                    <h1 class="py-lg-4 py-sm-1 display-5 fw-normal">NUESTROS PAQUETES FOTOGRÁFICOS</h1>
+                    <p class="py-3 fs-2 fw-light lh-lg">Nuestros precios se ajustan a la calidad sobresaliente de los servicios que ofrecemos.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="wow fadeInDown">
+            <div class="paquetes">
+                <div class="paquetes__box">
+                    <div class="paquetes__box-premium">
+                        <h3 class="premium-title">PREMIUM</h3>
+                        <p class="premium-price">$200</p>    
+                    </div>
+                    <div class="paquete__features">
+                        <p>2 horas de servicio fotográfico</p>
+                        <p>CD con las Fotos Digitales </p>
+                        <p>1 Foto impresa en 20x30 </p>
+                        <p>50 Fotos impresas en 10x15</p>    
+                    </div>
+                </div>
+                <div class="paquetes__box">
+                    <div class="paquetes__box-vip">
+                        <h3 class="vip-title">VIP</h3>
+                        <p class="vip-price">$400</p>
+                    </div>
+                    <div class="paquete__features">
+                        <p>4 horas de servicio fotográfico</p>
+                        <p>CD con las Fotos Digitales </p>
+                        <p>2 Fotos impresas en 20x30 </p>
+                        <p>80 Fotos impresas en 10x15</p>    
+                    </div>
+                </div>
+                <div class="paquetes__box">
+                    <div class="paquetes__box-platinum">
+                        <h3 class="platinum-title">PLATINUM</h3>
+                        <p class="platinum-price">$600</p>    
+                    </div>
+                    <div class="paquete__features">
+                        <p>6 horas de servicio fotográfico</p>
+                        <p>CD con las Fotos Digitales </p>
+                        <p>4 Fotos impresas en 30x40 </p>
+                        <p>100 Fotos impresas en 10x15</p>    
+                    </div>
+                </div>    
+            </div>
+        </section>
+        <br>
+        <br>
+        <!--Solicitar Servicios-->
+        <section class="wow fadeInUp" data-wow-duration="2s">
+            <form class="formulario" action="#" method="POST">                
+                <p class="formulario__title">SOLICITAR SERVICIO FOTOGRÁFICO</p>
+                <p class="formulario__sub">Completa tus datos correctamente</p>
+                <!--Nombres-->
+                <div class="formulario__block">
+                    <label class="form-label" for="nombre">Nombres y Apellidos</label><br>
+                    <input type="text" name="nombre" class="form-settings" placeholder="Nombre Completo" required>    
+                </div>
+                <!--Email-->
+                <div class="formulario__block">
+                    <label class="form-label" for="apellido">Email</label><br>
+                    <input type="email" class="form-settings" placeholder="Tu Email" required>
+                </div>
+                <!--Servicios-->
+                <div class="formulario__block">
+                    <label class="form-label" for="eventos">Servicio Fotográfico</label><br>
+                    <select name="eventos" id="#" class="form-settings">
+                        <option value="eventos">Fotografía de Eventos</option>
+                        <option value="belleza">Fotografía de Belleza</option>
+                        <option value="personal">Fotografía Personal</option>
+                        <option value="publicitaria">Fotografía Publicitaria</option>
+                        <option value="productos">Fotografía de Productos</option>
+                        <option value="institucional">Fotografía Institucional</option>
+                        <option value="alimentos">Fotografía de Alimentos</option>
+                        <option value="moda">Fotografía de Moda</option>
+                    </select>
+                </div>
+                <!--Paquetes-->
+                <div class="formulario__block">
+                    <p class="form-label">Paquete Fotográfico</p>
+                    <input type="radio" class="input-radio" name="paquetes" value="premium">
+                    <label class="form-options" for="paquetes">Premium</label><br>
+                    <input type="radio" class="input-radio" name="paquetes" value="vip">
+                    <label class="form-options" for="paquetes">VIP</label><br>
+                    <input type="radio" class="input-radio" name="paquetes" value="platinum">
+                    <label class="form-options" for="paquetes">Platinum</label>  
+                </div>
+                <!--Adicionales-->
+                <div class="formulario__block">
+                    <p class="form-label">Servicios Adicionales</p>
+                    <input type="checkbox" class="input-checkbox" name="dron" value="dron">
+                    <label class="form-options" for="dron">Drones</label><br>
+                    <input type="checkbox" class="input-checkbox" name="video" value="video">
+                    <label class="form-options" for="video">Videógrafo</label><br>    
+                </div>
+                <!--Fecha-->
+                <div class="formulario__block">
+                    <label for="fecha" class="form-label">Fecha del evento</label><br>
+                    <input class="form-date" type="date" name="fecha" id="#" required>
+                </div>
+                <!--Informacion Adicional-->
+                <div class="formulario__block">
+                    <label class="form-label" for="info">Información Adicional</label><br>
+                    <textarea class="textarea" name="info" id="#" cols="30" rows="10" placeholder="Ingrese aquí su mensaje" required></textarea>
+                </div>
+                <!--Cancelar o Enviar-->
+                <div class="botones">
+                    <input class="botones__cancelar" type="reset" value="CANCELAR">
+                    <input class="botones__enviar" type="submit" value="ENVIAR">
+                </div>
+            </form>
+        </section>
+    </main>
+
+    <!--Footer-->
+    <footer class="footer" id="footer-contacto">
+        <div class="footer__schedule">
+            <p>Atención: Lun - Vie: 10am a 7pm</p>
+            <p>Sáb: 10am a 2pm</p>
+        </div>
+        <div class="footer__social">
+            <p>Síguenos en:</p>
+            <ul class="footer__social--links">
+                <li>
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                </li>
+                <li>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </li>
+                <li>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                </li>
+                <li>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                </li>
+            </ul>
+        </div>
+        <div class="footer__copyright">
+            <p class="footer__copyright--details">&copy Photomatic 2021</p>
+            <p class="footer__copyright--details">Derechos reservados</p>
+        </div>
+    </footer>
+
+    <!--Scripts-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+    <script src="js/wow.min.js"></script>
+    <script>
+    new WOW().init();
+    </script>
+</body>
+</html>
