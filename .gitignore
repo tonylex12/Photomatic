@@ -1,0 +1,4 @@
+**/logs
+**/logs/debug.logs
+*.log
+/debug.logdebug.log
