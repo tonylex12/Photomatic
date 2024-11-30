@@ -299,7 +299,7 @@ main {
   }
 
   .features__box {
-    padding: 2rem 1.5rem;
+    padding: 2rem 1rem;
   }
 
   .features__box--icon {
@@ -317,9 +317,9 @@ main {
 
 .features__box {
   text-align: center;
-  padding: 2.5rem 2rem;
   background-color: #fff;
   border-radius: 1rem;
+  min-width: 311px;
   border: 1px solid rgba(246, 84, 87, 0.1);
   box-shadow: 0 8px 20px rgba(246, 84, 87, 0.15);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
