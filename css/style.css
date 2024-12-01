@@ -1141,3 +1141,12 @@ main {
     max-width: 100%;
   }
 }
+
+@media screen and (max-width: 768px) {
+  .fotos__img {
+    pointer-events: none;
+  }
+  #imageModal {
+    display: none !important;
+  }
+}
