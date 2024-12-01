@@ -320,6 +320,7 @@ main {
   background-color: #fff;
   border-radius: 1rem;
   min-width: 311px;
+  padding: 2rem 1rem;
   border: 1px solid rgba(246, 84, 87, 0.1);
   box-shadow: 0 8px 20px rgba(246, 84, 87, 0.15);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -634,6 +635,126 @@ main {
   }
 }
 
+/* Form Styles */
+.formulario {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background-color: #fff;
+  border-radius: 1rem;
+  box-shadow: 0 8px 20px rgba(246, 84, 87, 0.15);
+  border: 1px solid rgba(246, 84, 87, 0.1);
+}
+
+.formulario__title {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #333;
+  text-align: center;
+  margin-bottom: 0.5rem;
+}
+
+.formulario__sub {
+  font-size: 1.1rem;
+  color: #666;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.formulario__block {
+  margin-bottom: 1.5rem;
+}
+
+.form-label {
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 0.5rem;
+  display: block;
+}
+
+.form-settings,
+.form-date,
+.textarea {
+  width: 100%;
+  padding: 0.8rem;
+  border: 1px solid #ddd;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+}
+
+.form-settings:focus,
+.form-date:focus,
+.textarea:focus {
+  outline: none;
+  border-color: #f65457;
+  box-shadow: 0 0 0 2px rgba(246, 84, 87, 0.1);
+}
+
+.form-options {
+  margin-left: 0.5rem;
+  color: #666;
+}
+
+.input-radio,
+.input-checkbox {
+  margin-left: 1rem;
+}
+
+.botones {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.botones__cancelar,
+.botones__enviar {
+  padding: 0.8rem 2rem;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  min-width: 150px;
+  text-align: center;
+}
+
+.botones__cancelar {
+  background-color: #fff;
+  color: #f65457;
+  border: 1px solid #f65457;
+}
+
+.botones__enviar {
+  background-color: #f65457;
+  color: #fff;
+  border: 1px solid #f65457;
+}
+
+.botones__cancelar:hover {
+  background-color: #fee;
+}
+
+.botones__enviar:hover {
+  background-color: #e54447;
+}
+
+@media (max-width: 768px) {
+  .formulario {
+    margin: 1rem;
+    padding: 1.5rem;
+  }
+
+  .botones {
+    flex-direction: column;
+  }
+
+  .botones__cancelar,
+  .botones__enviar {
+    width: 100%;
+  }
+}
+
 .formulario {
   background-color: #f4f6fc;
   width: 40%;
@@ -783,6 +904,112 @@ main {
   #footer-contacto {
     margin-top: 10.5rem;
   }
+}
+
+/* Custom radio and checkbox styles */
+.input-radio,
+.input-checkbox {
+  appearance: none;
+  -webkit-appearance: none;
+  width: 1.2rem;
+  height: 1.2rem;
+  border: 2px solid #ddd;
+  border-radius: 50%;
+  margin-right: 0.5rem;
+  position: relative;
+  cursor: pointer;
+  vertical-align: middle;
+  transition: all 0.3s ease;
+}
+
+.input-checkbox {
+  border-radius: 0.3rem;
+}
+
+.input-radio:checked,
+.input-checkbox:checked {
+  border-color: #f65457;
+  background-color: #f65457;
+}
+
+.input-radio:checked::before {
+  content: "";
+  position: absolute;
+  width: 0.5rem;
+  height: 0.5rem;
+  background-color: white;
+  border-radius: 50%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.input-checkbox:checked::before {
+  content: "✓";
+  position: absolute;
+  color: white;
+  font-size: 0.8rem;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.input-radio:hover,
+.input-checkbox:hover {
+  border-color: #f65457;
+}
+
+/* Custom select styles */
+.form-settings {
+  appearance: none;
+  -webkit-appearance: none;
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23f65457' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6 9 12 15 18 9'%3e%3c/polyline%3e%3c/svg%3e");
+  background-repeat: no-repeat;
+  background-position: right 1rem center;
+  background-size: 1em;
+  padding-right: 2.5rem;
+}
+
+.form-settings:focus {
+  border-color: #f65457;
+  box-shadow: 0 0 0 2px rgba(246, 84, 87, 0.1);
+}
+
+/* Custom select and option styles */
+.form-settings option {
+  padding: 1rem;
+  background-color: #fff;
+  color: #333;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.form-settings option:hover,
+.form-settings option:focus {
+  background-color: #f65457 !important;
+  color: #fff !important;
+}
+
+/* For Firefox */
+.form-settings:-moz-focusring {
+  color: transparent;
+  text-shadow: 0 0 0 #333;
+}
+
+/* For Webkit browsers */
+.form-settings option:checked {
+  background: #f65457 linear-gradient(0deg, #f65457 0%, #f65457 100%) !important;
+  color: #fff !important;
+}
+
+/* Adjust spacing for radio and checkbox labels */
+.form-options {
+  display: inline-block;
+  margin-left: 0.5rem;
+  margin-bottom: 0.5rem;
+  color: #333;
+  cursor: pointer;
+  vertical-align: middle;
 }
 
 /* Testimonios */
