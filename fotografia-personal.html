@@ -1,125 +1,242 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, user-scalable=no"
+    />
     <title>Photomatic - Fotografía Personal</title>
     <!--Favicon-->
-    <link rel="title icon" type="image/png" href="images/favicon.png">
-    
-    <link rel="stylesheet" href="css/style.css">
-    
+    <link rel="title icon" type="image/png" href="images/favicon.png" />
+
+    <link rel="stylesheet" href="css/style.css" />
+
     <!--Google Fonts-->
-    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;400;600;800&family=Open+Sans:wght@300;400&display=swap" rel="stylesheet">
-    
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;400;600;800&family=Open+Sans:wght@300;400&display=swap"
+      rel="stylesheet"
+    />
+
     <!--Font Awesome-->
-    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.2.0/css/all.css">
-    
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.2.0/css/all.css"
+    />
+
     <!--Bootstrap-->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
     <!--WOW JS-->
-    <link rel="stylesheet" href="css/animate.css">
-</head>
-<body>
+    <link rel="stylesheet" href="css/animate.css" />
+  </head>
+  <body>
     <!--Header-->
     <header>
       <nav class="navbar navbar-expand-lg navbar-light fixed-top">
-          <a href="index.html" class="navbar-brand mb-0">
-              <img class="navbar-logo d-inline-block" src="images/logo.svg" alt="Logo de Photomatic"> 
-          </a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ms-auto">
-              <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="index.html">INICIO</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active" href="servicios.html">SERVICIOS</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="galeria.html">GALERIA</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="nosotros.html">NOSOTROS</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="contacto.html">CONTACTO</a>
-              </li>
-            </ul>
-          </div>
+        <a href="index.html" class="navbar-brand mb-0">
+          <img
+            class="navbar-logo d-inline-block"
+            src="images/logo.svg"
+            alt="Logo de Photomatic"
+          />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarTogglerDemo01"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="index.html"
+                >INICIO</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="servicios.html">SERVICIOS</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="galeria.html">GALERIA</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="nosotros.html">NOSOTROS</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contacto.html">CONTACTO</a>
+            </li>
+          </ul>
+        </div>
       </nav>
-  </header>
+    </header>
 
     <!--Main-->
     <main>
-        <!--Carousel-->
-        <section class="py-2">
-            <div class="container-fluid pt-lg-5 pt-sm-1">
-                <div class="row justify-content-center">
-                    <div class="col-lg-6 col-sm-12 mx-auto">
-                        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-                            <div class="carousel-indicators">
-                              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
-                              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
-                            </div>
-                            <div class="carousel-inner">
-                              <div class="carousel-item active">
-                                <img src="images/personal-1.jpg" loading="lazy" class="d-block w-100" alt="Mujer en foto blanco y negro">
-                              </div>
-                              <div class="carousel-item">
-                                <img src="images/personal-2.jpg" loading="lazy" class="d-block w-100" alt="Danza abstracta">
-                              </div>
-                              <div class="carousel-item">
-                                <img src="images/personal-3.jpg" loading="lazy" class="d-block w-100" alt="Mujer encinta">
-                              </div>
-                              <div class="carousel-item">
-                                <img src="images/personal-4.jpg" loading="lazy" class="d-block w-100" alt="Foto abstracta de una silueta de mujer">
-                              </div>
-                              <div class="carousel-item">
-                                <img src="images/personal-5.jpg" loading="lazy" class="d-block w-100" alt="Mujer danzando">
-                              </div>
-                            </div>
-                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-                              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                              <span class="visually-hidden">Previous</span>
-                            </button>
-                            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-                              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                              <span class="visually-hidden">Next</span>
-                            </button>
-                          </div>
-                    </div>
+      <!--Carousel-->
+      <section class="py-2">
+        <div class="container-fluid pt-lg-5 pt-sm-1">
+          <div class="row justify-content-center">
+            <div class="col-lg-6 col-sm-12 mx-auto">
+              <div
+                id="carouselExampleIndicators"
+                class="carousel slide"
+                data-bs-ride="carousel"
+              >
+                <div class="carousel-indicators">
+                  <button
+                    type="button"
+                    data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide-to="0"
+                    class="active"
+                    aria-current="true"
+                    aria-label="Slide 1"
+                  ></button>
+                  <button
+                    type="button"
+                    data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide-to="1"
+                    aria-label="Slide 2"
+                  ></button>
+                  <button
+                    type="button"
+                    data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide-to="2"
+                    aria-label="Slide 3"
+                  ></button>
+                  <button
+                    type="button"
+                    data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide-to="3"
+                    aria-label="Slide 4"
+                  ></button>
+                  <button
+                    type="button"
+                    data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide-to="4"
+                    aria-label="Slide 5"
+                  ></button>
                 </div>
-            </div>
-        </section>
-
-        <!--Descripción-->
-        <section class="px-4 mt-4 wow fadeInLeft">
-            <div class="row justify-content-center">
-                <div class="col-lg-6 col-sm-12 mb-3">
-                    <h1 class="text-center text-uppercase display-5">Fotografía Personal</h1>
-                    <p class="mt-4 fs-4 fw-light lh-lg"><strong>Emiliano Sánchez</strong>: En mi trabajo personal utilizo todos los medios a mi disposición . Desde cámaras de gran y medio formato, las de 35mm y el teléfono. Depende mucho de la luz y del estado de animo. A veces encuentro algo que me inspira sin haberlo buscado. Otras veces me paso meses sin un camino que seguir. Pase unos años sin producir mucho. Pero ahora estoy en un momento productivo.<br>Mis proyectos personales me acompañan a todos los lugares a los que viajo. Las calles y paisajes de los lugares a los que viajo son escenarios propicios para darle una mirada desde mis diferentes experiencias visuales en todo el Perú, Paris, New York, Milan y en el interior de mi estudio también desarrollo mis proyectos.</p>
-                  </div> 
-                  
-
-            </div>
-        </section>
-        
-        <!--Otros servicios-->
-        <section>
-          <div class="row justify-content-center py-3">
-              <h2 class="text-center fs-3 p-3 display-6">TODOS NUESTROS SERVICIOS</h2>
-              <div class="col-lg-6 text-center">
-                  <button class="m-2 btn-servicios p-2 mb-5"><a href="servicios.html" class="text-light fs-5 fw-light">Otros Servicios</a></button>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img
+                      src="images/personal-1.jpg"
+                      loading="lazy"
+                      class="d-block w-100"
+                      alt="Mujer en foto blanco y negro"
+                    />
+                  </div>
+                  <div class="carousel-item">
+                    <img
+                      src="images/personal-2.jpg"
+                      loading="lazy"
+                      class="d-block w-100"
+                      alt="Danza abstracta"
+                    />
+                  </div>
+                  <div class="carousel-item">
+                    <img
+                      src="images/personal-3.jpg"
+                      loading="lazy"
+                      class="d-block w-100"
+                      alt="Mujer encinta"
+                    />
+                  </div>
+                  <div class="carousel-item">
+                    <img
+                      src="images/personal-4.jpg"
+                      loading="lazy"
+                      class="d-block w-100"
+                      alt="Foto abstracta de una silueta de mujer"
+                    />
+                  </div>
+                  <div class="carousel-item">
+                    <img
+                      src="images/personal-5.jpg"
+                      loading="lazy"
+                      class="d-block w-100"
+                      alt="Mujer danzando"
+                    />
+                  </div>
+                </div>
+                <button
+                  class="carousel-control-prev"
+                  type="button"
+                  data-bs-target="#carouselExampleIndicators"
+                  data-bs-slide="prev"
+                >
+                  <span
+                    class="carousel-control-prev-icon"
+                    aria-hidden="true"
+                  ></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button
+                  class="carousel-control-next"
+                  type="button"
+                  data-bs-target="#carouselExampleIndicators"
+                  data-bs-slide="next"
+                >
+                  <span
+                    class="carousel-control-next-icon"
+                    aria-hidden="true"
+                  ></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
               </div>
+            </div>
           </div>
+        </div>
+      </section>
+
+      <!--Descripción-->
+      <section class="px-4 mt-4 wow fadeInLeft">
+        <div class="row justify-content-center">
+          <div class="col-lg-6 col-sm-12 mb-3">
+            <h1 class="text-center text-uppercase display-5">
+              Fotografía Personal
+            </h1>
+            <p class="mt-4 fs-4 fw-light lh-lg">
+              <strong>Emiliano Sánchez</strong>: En mi trabajo personal utilizo
+              todos los medios a mi disposición . Desde cámaras de gran y medio
+              formato, las de 35mm y el teléfono. Depende mucho de la luz y del
+              estado de animo. A veces encuentro algo que me inspira sin haberlo
+              buscado. Otras veces me paso meses sin un camino que seguir. Pase
+              unos años sin producir mucho. Pero ahora estoy en un momento
+              productivo.<br />Mis proyectos personales me acompañan a todos los
+              lugares a los que viajo. Las calles y paisajes de los lugares a
+              los que viajo son escenarios propicios para darle una mirada desde
+              mis diferentes experiencias visuales en todo el Perú, Paris, New
+              York, Milan y en el interior de mi estudio también desarrollo mis
+              proyectos.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!--Otros servicios-->
+      <section>
+        <div class="row justify-content-center py-3">
+          <h2 class="text-center fs-3 p-3 display-6">
+            TODOS NUESTROS SERVICIOS
+          </h2>
+          <div class="col-lg-6 text-center">
+            <button class="m-2 btn-servicios p-2 mb-5">
+              <a href="servicios.html" class="text-light fs-5 fw-light"
+                >Otros Servicios</a
+              >
+            </button>
+          </div>
+        </div>
       </section>
     </main>
 
@@ -133,16 +250,24 @@
         <p>Síguenos en:</p>
         <ul class="footer__social--links">
           <li>
-            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://www.facebook.com"
+              ><i class="fab fa-facebook-f"></i
+            ></a>
           </li>
           <li>
-            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.instagram.com"
+              ><i class="fab fa-instagram"></i
+            ></a>
           </li>
           <li>
-            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            <a href="https://www.linkedin.com"
+              ><i class="fab fa-linkedin-in"></i
+            ></a>
           </li>
           <li>
-            <a href="#"><i class="fab fa-x-twitter"></i></a>
+            <a href="https://www.twitter.com"
+              ><i class="fab fa-x-twitter"></i
+            ></a>
           </li>
         </ul>
       </div>
